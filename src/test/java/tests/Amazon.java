@@ -10,6 +10,10 @@ import org.openqa.selenium.support.ui.Select;
 import java.util.concurrent.TimeUnit;
 
 public class Amazon {
+    /**
+     * @param args
+     * @throws InterruptedException Branch name RS2535
+     */
     public static void main(String[] args) throws InterruptedException {
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
