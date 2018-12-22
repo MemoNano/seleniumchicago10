@@ -9,6 +9,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
 public class SmartBearPlacingOrder   {
+
+    /**
+     * @param args Branch name RS 2535
+     */
     public static void main(String[] args) {
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
@@ -34,8 +38,7 @@ public class SmartBearPlacingOrder   {
         String messageText = message.getText();
         if(messageText.equals("New order has been successfully added.")){
             System.out.println("Order verification PASSED");
-        }
-        else{
+        } else{
             System.out.println("Order verification FAILED");
         }
         System.out.println(message.isDisplayed());
